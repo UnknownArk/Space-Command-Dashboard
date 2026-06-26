@@ -6,7 +6,7 @@ import datetime
 class Mission(Base):
     __tablename__="missions"
     id = Column(Integer, primary_key=True,index=True)
-    name= Column(String(100), nullable=False)
+    name= Column(String(100), nullable=False,index=True)
     target_destination=Column(String(255),nullable=False)
     status= Column(String(50),default="Planning")
     launch_date= Column(Date)
